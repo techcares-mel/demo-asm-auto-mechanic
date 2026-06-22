@@ -1,18 +1,18 @@
-<!-- Template: A — Auto / Trades / Industrial — mobile mechanic, type contains "mechanic" -->
+<!-- Template: DL Auto Care reference — light professional automotive -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASM Auto Repairs — Mobile Mechanic | Braybrook, Melbourne</title>
-  <meta name="description" content="ASM Auto Repairs is Melbourne's trusted mobile mechanic. Andy comes to your home, workplace, or roadside across the western suburbs. Book today: 0403 753 307.">
+  <title>ASM Auto Repairs — Mobile Mechanic, Braybrook VIC</title>
+  <meta name="description" content="ASM Auto Repairs — your reliable, honest and experienced mobile mechanic serving Melbourne's western suburbs. We come to you at home, work or roadside.">
 
-  <!-- Google Fonts — Oswald + Roboto -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome — only because Facebook social link is non-empty -->
+  <!-- Font Awesome (Facebook social link exists) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="styles.css">
@@ -25,440 +25,454 @@
   <!-- Scroll Progress Bar -->
   <div id="scrollProgress"></div>
 
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
   <!-- ===================== NAV ===================== -->
-  <nav id="mainNav">
+  <nav id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <span class="logo-chip">
-          <img src="logo.png" alt="ASM Auto Repairs logo" height="44">
-        </span>
+        <img src="logo.png" alt="ASM Auto Repairs logo" height="46">
       </a>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link active-link">Home</a></li>
-        <li><a href="#why" class="nav-link">Why Us</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+      <ul class="nav-links" id="navLinks">
+        <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="btn btn-primary nav-cta" href="#contact">Book a Service</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <a href="#contact" class="btn btn-nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Mobile Nav Overlay -->
-  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
-    <button class="overlay-close" id="overlayClose" aria-label="Close menu">✕</button>
-    <ul class="overlay-links">
-      <li><a href="#home" class="overlay-link">Home</a></li>
-      <li><a href="#why" class="overlay-link">Why Us</a></li>
-      <li><a href="#services" class="overlay-link">Services</a></li>
-      <li><a href="#about" class="overlay-link">About</a></li>
-      <li><a href="#contact" class="overlay-link">Contact</a></li>
-    </ul>
-    <a class="btn btn-primary overlay-link" href="#contact" style="margin-top:2rem;">Book a Service</a>
-  </div>
-
   <!-- ===================== HERO ===================== -->
   <section id="home" class="hero">
-    <div class="hero-inner">
-      <p class="hero-eyebrow reveal">BRAYBROOK &amp; WESTERN MELBOURNE</p>
-      <h1 class="reveal d1">MOBILE <em>MECHANIC</em><br>THAT COMES<br>TO YOU</h1>
-      <p class="hero-tagline reveal d2">Your reliable, honest and experienced mechanic that comes to you — at your home, workplace, or roadside.</p>
-      <div class="hero-ctas reveal d3">
-        <a class="btn btn-primary" href="#contact">Book a Mobile Service</a>
-        <a class="btn btn-outline" href="tel:0403753307">Call 0403 753 307</a>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-eyebrow">MOBILE MECHANIC &middot; BRAYBROOK VIC</p>
+      <h1>ASM <em>Auto Repairs</em><br>We Come To You</h1>
+      <p class="hero-tagline">Your reliable, honest and experienced mechanic that comes to you</p>
+      <p class="hero-address">
+        <i class="fas fa-map-marker-alt"></i> 2 Mullenger Rd, Braybrook VIC 3019
+        &nbsp;&nbsp;
+        <i class="fas fa-phone"></i> <a href="tel:0403753307">0403 753 307</a>
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Book a Mobile Service</a>
+        <a href="tel:0403753307" class="btn btn-outline-white">Call 0403 753 307</a>
       </div>
-      <!-- Trust Strip -->
-      <div class="trust-strip reveal d4">
-        <div class="trust-item">
-          <span class="trust-icon">&#128295;</span>
-          <span class="trust-label">Qualified &amp; Experienced</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">&#128652;</span>
-          <span class="trust-label">We Come To You</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">&#128176;</span>
-          <span class="trust-label">Honest Pricing</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">&#9989;</span>
-          <span class="trust-label">All Makes &amp; Models</span>
-        </div>
+      <div class="hero-trust">
+        <span><i class="fas fa-car"></i> Mobile Service</span>
+        <span><i class="fas fa-tools"></i> All Makes &amp; Models</span>
+        <span><i class="fas fa-shield-alt"></i> Honest Pricing</span>
+        <span><i class="fas fa-check-circle"></i> Western Suburbs</span>
       </div>
     </div>
   </section>
 
-  <!-- ===================== WHY CHOOSE US ===================== -->
-  <section id="why" class="why-section">
-    <div class="container">
-      <p class="eyebrow reveal">WHY CHOOSE US</p>
-      <h2 class="reveal d1">The Smarter Way to Get Your Car Fixed</h2>
-      <div class="why-grid">
-        <div class="why-card reveal d1">
-          <div class="icon-circle">
-            <i class="fas fa-map-marker-alt"></i>
+  <!-- ===================== SERVICE TAGS STRIP ===================== -->
+  <section class="service-strip" aria-label="Services overview">
+    <div class="service-strip-track">
+      <span class="service-tag">Logbook Servicing</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Brake Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Roadworthy Certificates</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Vehicle Diagnostics</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Tyre Replacement</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Battery Replacement</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Clutch Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Suspension &amp; Steering</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Engine Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Pre-Purchase Inspections</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Roadside Assistance</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">General Mechanical Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <!-- Repeat set for seamless marquee -->
+      <span class="service-tag">Logbook Servicing</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Brake Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Roadworthy Certificates</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Vehicle Diagnostics</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Tyre Replacement</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Battery Replacement</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Clutch Repairs</span>
+      <span class="service-tag-dot">&bull;</span>
+      <span class="service-tag">Suspension &amp; Steering</span>
+      <span class="service-tag-dot">&bull;</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT + STATS ===================== -->
+  <section id="about" class="about-section section-pad">
+    <div class="container about-grid">
+      <!-- Left: image -->
+      <div class="about-image-wrap reveal">
+        <img src="images/image2.jpg" alt="Interior of an automotive repair shop with cars undergoing maintenance and servicing." class="about-img">
+      </div>
+      <!-- Right: text + stats -->
+      <div class="about-text">
+        <p class="eyebrow reveal">ABOUT ASM AUTO REPAIRS</p>
+        <h2 class="reveal">Your Local Mobile <em>Mechanic</em></h2>
+        <p class="reveal d1">ASM Auto Repairs is a mobile mechanic service based in Braybrook, Melbourne, servicing vehicles at your home, workplace, or roadside. Operated by Andy, ASM Auto Repairs brings professional-grade automotive repairs and servicing directly to you — saving you the hassle of dropping your car off at a workshop.</p>
+        <p class="reveal d2">With a focus on honesty, reliability, and quality workmanship, ASM Auto Repairs offers a wide range of mechanical services for most makes and models across Melbourne's western suburbs.</p>
+        <div class="stats-row">
+          <div class="stat-item reveal d1">
+            <span class="stat-number" data-target="12" data-suffix="">12</span>
+            <span class="stat-label">Services Offered</span>
           </div>
-          <h3>We Come To You</h3>
-          <p>No tow trucks, no dropping off your car. Andy drives to your home, workplace, or roadside — saving you time and hassle.</p>
-        </div>
-        <div class="why-card reveal d2">
-          <div class="icon-circle">
-            <i class="fas fa-hand-holding-dollar"></i>
+          <div class="stat-item reveal d2">
+            <span class="stat-number stat-text">100%</span>
+            <span class="stat-label">Mobile Service</span>
           </div>
-          <h3>Honest Pricing</h3>
-          <p>Transparent, upfront quotes with no hidden fees. You know exactly what you're paying before any work begins.</p>
-        </div>
-        <div class="why-card reveal d3">
-          <div class="icon-circle">
-            <i class="fas fa-car"></i>
+          <div class="stat-item reveal d3">
+            <span class="stat-number stat-text">All</span>
+            <span class="stat-label">Makes &amp; Models</span>
           </div>
-          <h3>All Makes &amp; Models</h3>
-          <p>From Japanese to European, hatchbacks to 4WDs — ASM services most makes and models across Melbourne's western suburbs.</p>
-        </div>
-        <div class="why-card reveal d4">
-          <div class="icon-circle">
-            <i class="fas fa-user-check"></i>
+          <div class="stat-item reveal d4">
+            <span class="stat-number stat-text">Same&#8209;Day*</span>
+            <span class="stat-label">Bookings Available</span>
           </div>
-          <h3>Qualified &amp; Experienced</h3>
-          <p>Andy is a fully qualified mechanic with years of hands-on experience delivering professional-grade automotive repairs.</p>
         </div>
+        <p class="stat-disclaimer reveal">*Subject to availability</p>
       </div>
     </div>
   </section>
 
   <!-- ===================== SERVICES ===================== -->
-  <section id="services" class="services-section">
+  <section id="services" class="services-section section-pad">
     <div class="container">
-      <p class="eyebrow reveal">OUR SERVICES</p>
-      <h2 class="reveal d1">Everything Your Car Needs, At Your Door</h2>
+      <p class="eyebrow text-center reveal">WHAT WE DO</p>
+      <h2 class="text-center reveal">Our Services</h2>
+      <p class="section-sub text-center reveal">Professional mobile mechanical services delivered to your home, workplace or roadside across Melbourne's western suburbs.</p>
       <div class="services-grid">
 
         <div class="service-card reveal d1">
-          <div class="service-icon-block">
-            <i class="fas fa-book-open"></i>
-          </div>
-          <div class="service-body">
-            <h3>Logbook Servicing</h3>
-            <p>Keep your manufacturer warranty intact with scheduled logbook services carried out to factory specifications — right at your door.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-book"></i></div>
+          <h3>Logbook Servicing</h3>
+          <p>Manufacturer-scheduled logbook services to keep your warranty valid and your car running at its best.</p>
         </div>
 
         <div class="service-card reveal d2">
-          <div class="service-icon-block">
-            <i class="fas fa-tools"></i>
-          </div>
-          <div class="service-body">
-            <h3>General Mechanical Repairs</h3>
-            <p>From minor fixes to major mechanical work, Andy handles a wide range of repairs on most makes and models across Melbourne's west.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-wrench"></i></div>
+          <h3>General Mechanical Repairs</h3>
+          <p>From minor fixes to full mechanical overhauls — we handle all general repairs at your location.</p>
         </div>
 
         <div class="service-card reveal d3">
-          <div class="service-icon-block">
-            <i class="fas fa-circle-dot"></i>
-          </div>
-          <div class="service-body">
-            <h3>Brake Repairs &amp; Replacement</h3>
-            <p>Safety-critical brake inspections, pad and rotor replacements, and brake fluid flushes carried out with quality parts.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-compact-disc"></i></div>
+          <h3>Brake Repairs &amp; Replacement</h3>
+          <p>Brake pads, rotors, calipers and brake fluid — safety-critical work done on-site with quality parts.</p>
         </div>
 
         <div class="service-card reveal d1">
-          <div class="service-icon-block">
-            <i class="fas fa-clipboard-check"></i>
-          </div>
-          <div class="service-body">
-            <h3>Roadworthy Certificates (RWC)</h3>
-            <p>Need a RWC for your vehicle sale or registration? ASM can perform a thorough roadworthy inspection at a time and place that suits you.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Roadworthy Certificates (RWC)</h3>
+          <p>Licensed roadworthy inspections to certify your vehicle meets Victorian road safety standards.</p>
         </div>
 
         <div class="service-card reveal d2">
-          <div class="service-icon-block">
-            <i class="fas fa-microchip"></i>
-          </div>
-          <div class="service-body">
-            <h3>Vehicle Diagnostics &amp; Fault Scanning</h3>
-            <p>Check engine light on? Andy uses professional diagnostic tools to read fault codes and diagnose the root cause accurately.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+          <h3>Vehicle Diagnostics &amp; Fault Scanning</h3>
+          <p>Electronic fault scanning and diagnostics to accurately identify warning lights and hidden issues.</p>
         </div>
 
         <div class="service-card reveal d3">
-          <div class="service-icon-block">
-            <i class="fas fa-circle-notch"></i>
-          </div>
-          <div class="service-body">
-            <h3>Tyre Replacement &amp; Rotation</h3>
-            <p>Mobile tyre fitting and rotation services to ensure even wear, better handling, and maximum safety on Melbourne roads.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-circle-notch"></i></div>
+          <h3>Tyre Replacement &amp; Rotation</h3>
+          <p>New tyre fitting and rotation for even tread wear, improved handling, and longer tyre life.</p>
         </div>
 
         <div class="service-card reveal d1">
-          <div class="service-icon-block">
-            <i class="fas fa-battery-full"></i>
-          </div>
-          <div class="service-body">
-            <h3>Battery Replacement</h3>
-            <p>Dead battery? ASM comes to you with the right replacement — tested and fitted on the spot so you're back on the road fast.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-battery-full"></i></div>
+          <h3>Battery Replacement</h3>
+          <p>Battery testing and replacement at your location — no need to worry about a car that won't start.</p>
         </div>
 
         <div class="service-card reveal d2">
-          <div class="service-icon-block">
-            <i class="fas fa-cog"></i>
-          </div>
-          <div class="service-body">
-            <h3>Clutch Repairs</h3>
-            <p>Slipping, shuddering or stiff clutch? Andy diagnoses and repairs clutch systems to restore smooth, reliable gear changes.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-cogs"></i></div>
+          <h3>Clutch Repairs</h3>
+          <p>Clutch plate, pressure plate and flywheel repairs for manual transmissions — done properly, first time.</p>
         </div>
 
         <div class="service-card reveal d3">
-          <div class="service-icon-block">
-            <i class="fas fa-car-burst"></i>
-          </div>
-          <div class="service-body">
-            <h3>Suspension &amp; Steering</h3>
-            <p>Pulling to one side or a rough ride? Suspension and steering repairs carried out correctly to restore vehicle control and comfort.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-car-crash"></i></div>
+          <h3>Suspension &amp; Steering</h3>
+          <p>Shock absorbers, struts, tie rods and steering components checked and replaced for safe, smooth driving.</p>
         </div>
 
         <div class="service-card reveal d1">
-          <div class="service-icon-block">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <div class="service-body">
-            <h3>Engine Repairs</h3>
-            <p>From overheating to oil leaks and timing issues, Andy performs engine diagnostics and repairs to keep your motor running strong.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-oil-can"></i></div>
+          <h3>Engine Repairs</h3>
+          <p>Diagnostics and hands-on engine repairs covering a wide range of makes, models, and fault types.</p>
         </div>
 
         <div class="service-card reveal d2">
-          <div class="service-icon-block">
-            <i class="fas fa-search"></i>
-          </div>
-          <div class="service-body">
-            <h3>Pre-Purchase Vehicle Inspections</h3>
-            <p>Buying a used car? Get a thorough pre-purchase inspection at any location across Melbourne's west — know before you commit.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-search"></i></div>
+          <h3>Pre-Purchase Vehicle Inspections</h3>
+          <p>Buying a used car? We inspect the vehicle thoroughly before you commit so you buy with confidence.</p>
         </div>
 
         <div class="service-card reveal d3">
-          <div class="service-icon-block">
-            <i class="fas fa-road"></i>
-          </div>
-          <div class="service-body">
-            <h3>Roadside Assistance</h3>
-            <p>Broken down on the road? ASM's mobile roadside assistance gets you back moving as quickly as possible — wherever you are.</p>
-          </div>
+          <div class="service-icon-wrap"><i class="fas fa-road"></i></div>
+          <h3>Roadside Assistance</h3>
+          <p>Stuck on the road? Andy comes to you for emergency roadside repairs and breakdown assistance.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== STATS ===================== -->
-  <section id="stats" class="stats-section">
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="features-section section-pad">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal d1">
-          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-          <p class="stat-label">Years Experience</p>
+      <p class="eyebrow text-center reveal">WHY ASM AUTO REPAIRS</p>
+      <h2 class="text-center reveal">Why Choose Us</h2>
+      <div class="features-grid">
+
+        <div class="feature-card reveal d1">
+          <div class="feature-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>We Come To You</h3>
+          <p>No need to drop your car off. Andy comes to your home, workplace, or roadside — saving you time and hassle.</p>
         </div>
-        <div class="stat-item reveal d2">
-          <span class="stat-number" data-target="1000">0</span><span class="stat-suffix">+</span>
-          <p class="stat-label">Jobs Completed</p>
+
+        <div class="feature-card reveal d2">
+          <div class="feature-icon-wrap"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Honest, Upfront Pricing</h3>
+          <p>No hidden fees, no surprise bills. We quote before we start and explain every repair in plain English.</p>
         </div>
-        <div class="stat-item reveal d3">
-          <span class="stat-number" data-target="12">0</span><span class="stat-suffix"></span>
-          <p class="stat-label">Services Offered</p>
+
+        <div class="feature-card reveal d3">
+          <div class="feature-icon-wrap"><i class="fas fa-car"></i></div>
+          <h3>All Makes &amp; Models</h3>
+          <p>From Japanese hatchbacks to European sedans — ASM services most makes and models across the western suburbs.</p>
         </div>
-        <div class="stat-item reveal d4">
-          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-          <p class="stat-label">Mobile — We Come To You</p>
+
+        <div class="feature-card reveal d4">
+          <div class="feature-icon-wrap"><i class="fas fa-user-check"></i></div>
+          <h3>Qualified &amp; Experienced</h3>
+          <p>Professional-grade repairs backed by real mechanical qualifications and extensive hands-on experience.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section id="about" class="about-section">
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery" class="gallery-section section-pad">
     <div class="container">
-      <div class="about-grid">
-        <!-- Left: text content -->
-        <div class="about-text">
-          <p class="eyebrow reveal">ABOUT US</p>
-          <h2 class="reveal d1">Professional Automotive Care, <em>Delivered to Your Door</em></h2>
-          <p class="reveal d2">ASM Auto Repairs is a mobile mechanic service based in Braybrook, Melbourne, servicing vehicles at your home, workplace, or roadside. Operated by Andy, ASM brings professional-grade automotive repairs and servicing directly to you — saving you the hassle of dropping your car off at a workshop.</p>
-          <p class="reveal d3">With a focus on honesty, reliability, and quality workmanship, ASM Auto Repairs offers a wide range of mechanical services for most makes and models across Melbourne's western suburbs.</p>
-          <ul class="feature-list reveal d4">
-            <li><i class="fas fa-check"></i> Fully qualified &amp; experienced mechanic</li>
-            <li><i class="fas fa-check"></i> Servicing Melbourne's western suburbs</li>
-            <li><i class="fas fa-check"></i> Transparent, upfront pricing</li>
-            <li><i class="fas fa-check"></i> No workshop drop-off required</li>
-            <li><i class="fas fa-check"></i> All makes &amp; models serviced</li>
-            <li><i class="fas fa-check"></i> Home, workplace, or roadside visits</li>
-          </ul>
+      <p class="eyebrow text-center reveal">OUR WORK</p>
+      <h2 class="text-center reveal">See What We Do</h2>
+      <p class="section-sub text-center reveal">Real work from real jobs across Melbourne's western suburbs.</p>
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal gallery-wide">
+          <img src="images/image4.jpg" alt="Detailed image of a mechanic repairing a car engine, showcasing technical expertise.">
+          <div class="gallery-caption">Mechanic repairing a car engine — technical expertise on every job.</div>
         </div>
-        <!-- Right: decorative CSS block (no image available) -->
-        <div class="about-deco reveal d2">
-          <div class="about-deco-inner">
-            <div class="deco-icon"><i class="fas fa-car-side"></i></div>
-            <span class="deco-name">ASM<br>AUTO<br>REPAIRS</span>
-            <span class="deco-sub">Mobile Mechanic</span>
-            <span class="deco-location">Braybrook, Melbourne</span>
-          </div>
+
+        <div class="gallery-item reveal d1">
+          <img src="images/image5.jpg" alt="Detailed photo of a red automotive brake caliper and disc brake in focus.">
+          <div class="gallery-caption">Red automotive brake caliper — brake repairs done right.</div>
         </div>
+
+        <div class="gallery-item reveal d2">
+          <img src="images/image6.jpg" alt="Close-up of a car engine inspection using a diagnostic tool in a garage setting.">
+          <div class="gallery-caption">Engine inspection using a diagnostic tool.</div>
+        </div>
+
+        <div class="gallery-item reveal d3">
+          <img src="images/image7.jpg" alt="A young mechanic works on a car's underside in an outdoor garage setting.">
+          <div class="gallery-caption">Mobile mechanic servicing a car on-site.</div>
+        </div>
+
+        <div class="gallery-item reveal d1">
+          <img src="images/image8.jpg" alt="Detailed view of an electric car battery inside a vehicle's engine compartment.">
+          <div class="gallery-caption">Battery inspection and replacement service.</div>
+        </div>
+
+        <div class="gallery-item reveal d2">
+          <img src="images/image9.jpg" alt="Mechanic inspecting a raised car in an auto workshop for maintenance and repair services.">
+          <div class="gallery-caption">Thorough under-vehicle inspection and maintenance.</div>
+        </div>
+
+        <div class="gallery-item reveal d3">
+          <img src="images/image10.jpg" alt="A woman kneels, cleaning the interior of a red BMW in a garage environment.">
+          <div class="gallery-caption">Full vehicle care — going the extra mile.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM / MEET ANDY ===================== -->
+  <section class="team-section section-pad">
+    <div class="container team-grid">
+      <div class="team-image-wrap reveal">
+        <img src="images/image3.jpg" alt="Portrait of a skilled mechanic holding a lug wrench — ASM Auto Repairs operator Andy." class="team-img">
+      </div>
+      <div class="team-text">
+        <p class="eyebrow reveal">MEET YOUR MECHANIC</p>
+        <h2 class="reveal">Your Local <em>Mobile Mechanic</em></h2>
+        <p class="reveal d1">ASM Auto Repairs is operated by Andy — a qualified, experienced mechanic who built this business on a simple promise: give every customer the honest, professional service they deserve, delivered straight to their door.</p>
+        <p class="reveal d2">Based in Braybrook, Andy covers Melbourne's western suburbs and comes to you wherever you are — at home, at work, or on the side of the road. No workshop overhead, no unnecessary upselling. Just quality workmanship and transparent pricing every time.</p>
+        <ul class="team-features reveal d3">
+          <li><i class="fas fa-check"></i> Fully qualified mechanic</li>
+          <li><i class="fas fa-check"></i> Honest &amp; transparent pricing</li>
+          <li><i class="fas fa-check"></i> Comes directly to you</li>
+          <li><i class="fas fa-check"></i> Serving Melbourne's western suburbs</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary reveal d4">Book With Andy</a>
       </div>
     </div>
   </section>
 
   <!-- ===================== CONTACT ===================== -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="contact-grid">
-        <!-- Left: contact info + map -->
-        <div class="contact-info">
-          <p class="eyebrow reveal">GET IN TOUCH</p>
-          <h2 class="reveal d1">Book Your Mobile Service Today</h2>
-          <p class="contact-intro reveal d2">Call Andy directly or fill in the form and we'll get back to you promptly. We service Braybrook and surrounding western suburbs of Melbourne.</p>
+  <section id="contact" class="contact-section section-pad">
+    <div class="container contact-grid">
+      <!-- Left: details + map -->
+      <div class="contact-details">
+        <p class="eyebrow reveal">GET IN TOUCH</p>
+        <h2 class="reveal">Book a Mobile Service</h2>
+        <p class="reveal d1">Call or message Andy directly — we'll get back to you quickly and arrange a time that works for you.</p>
 
-          <div class="contact-rows reveal d3">
-            <div class="contact-row">
-              <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-              <div>
-                <p class="contact-row-label">Phone</p>
-                <a href="tel:0403753307" class="contact-row-value">0403 753 307</a>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <p class="contact-row-label">Service Area</p>
-                <p class="contact-row-value">Braybrook VIC 3019 &amp; Western Melbourne Suburbs</p>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-icon-circle"><i class="fab fa-facebook-f"></i></div>
-              <div>
-                <p class="contact-row-label">Facebook</p>
-                <a href="https://www.facebook.com/ASMautorepairs/" target="_blank" rel="noopener" class="contact-row-value">ASMautorepairs</a>
-              </div>
+        <div class="contact-rows">
+          <div class="contact-row reveal d1">
+            <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:0403753307" class="contact-value">0403 753 307</a>
             </div>
           </div>
-
-          <!-- Google Maps Embed -->
-          <div class="map-wrap reveal d4">
-            <iframe
-              src="https://maps.google.com/maps?q=2+Mullenger+Rd%2C+Braybrook+VIC+3019%2C+Australia&output=embed"
-              width="100%"
-              height="280"
-              frameborder="0"
-              loading="lazy"
-              style="border:0; border-radius: var(--radius);"
-              allowfullscreen
-              title="ASM Auto Repairs location map">
-            </iframe>
+          <div class="contact-row reveal d2">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">2 Mullenger Rd, Braybrook VIC 3019</span>
+            </div>
+          </div>
+          <div class="contact-row reveal d3">
+            <div class="contact-icon-wrap"><i class="fab fa-facebook-f"></i></div>
+            <div>
+              <span class="contact-label">Facebook</span>
+              <a href="https://www.facebook.com/ASMautorepairs/" target="_blank" rel="noopener" class="contact-value">facebook.com/ASMautorepairs</a>
+            </div>
           </div>
         </div>
 
-        <!-- Right: Contact Form -->
-        <div class="contact-form-wrap reveal d2">
-          <form id="contactForm" novalidate>
-            <h3>Send Us a Message</h3>
-            <div class="form-group">
-              <label for="name">Your Name <span class="req">*</span></label>
-              <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="e.g. 04XX XXX XXX">
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address <span class="req">*</span></label>
-              <input type="email" id="email" name="email" placeholder="your@email.com.au" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message <span class="req">*</span></label>
-              <textarea id="message" name="message" rows="5" placeholder="Describe what your vehicle needs or ask us a question..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
-          </form>
-          <div class="form-thanks" id="formThanks" style="display:none;">
-            <div class="thanks-icon"><i class="fas fa-check-circle"></i></div>
-            <h3>Thank you!</h3>
-            <p>We have received your message and will be in touch shortly.</p>
-          </div>
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=2+Mullenger+Rd%2C+Braybrook+VIC+3019%2C+Australia&output=embed"
+            width="100%"
+            height="300"
+            frameborder="0"
+            loading="lazy"
+            style="border:0; border-radius: var(--radius);"
+            title="ASM Auto Repairs location map"
+          ></iframe>
         </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap reveal d2">
+        <form id="contactForm" class="contact-form" novalidate>
+          <h3>Send Us a Message</h3>
+          <div class="form-group">
+            <label for="fname">Name <span class="required-mark">*</span></label>
+            <input type="text" id="fname" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone</label>
+            <input type="tel" id="fphone" name="phone" placeholder="Your phone number">
+          </div>
+          <div class="form-group">
+            <label for="femail">Email <span class="required-mark">*</span></label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message <span class="required-mark">*</span></label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell us about your vehicle and what service you need..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Col 1: Logo + tagline + social -->
-        <div class="footer-brand">
-          <a href="#home" class="footer-logo-link">
-            <span class="logo-chip logo-chip-footer">
-              <img src="logo.png" alt="ASM Auto Repairs logo" height="56">
-            </span>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Logo chip + tagline + social -->
+      <div class="footer-brand">
+        <div class="footer-logo-chip">
+          <img src="logo.png" alt="ASM Auto Repairs" height="56">
+        </div>
+        <p class="footer-tagline">Your reliable, honest and experienced mechanic that comes to you.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/ASMautorepairs/" target="_blank" rel="noopener" aria-label="ASM Auto Repairs on Facebook" class="footer-social-icon">
+            <i class="fab fa-facebook-f"></i>
           </a>
-          <p class="footer-tagline">Your reliable, honest and experienced mechanic that comes to you.</p>
-          <div class="footer-socials">
-            <a href="https://www.facebook.com/ASMautorepairs/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Col 2: Quick Links -->
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#why">Why Choose Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Services -->
-        <div class="footer-col">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#services">Logbook Servicing</a></li>
-            <li><a href="#services">Brake Repairs</a></li>
-            <li><a href="#services">Vehicle Diagnostics</a></li>
-            <li><a href="#services">Roadworthy Certificates</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact -->
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><i class="fas fa-phone" style="color:var(--accent); margin-right:0.5rem;"></i><a href="tel:0403753307">0403 753 307</a></li>
-            <li><i class="fas fa-map-marker-alt" style="color:var(--accent); margin-right:0.5rem;"></i>Braybrook VIC 3019</li>
-            <li><i class="fab fa-facebook-f" style="color:var(--accent); margin-right:0.5rem;"></i><a href="https://www.facebook.com/ASMautorepairs/" target="_blank" rel="noopener">Facebook</a></li>
-          </ul>
         </div>
       </div>
 
-      <div class="footer-bar">
-        <p>&copy; <span id="footerYear"></span> ASM Auto Repairs. All rights reserved.</p>
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Top Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Logbook Servicing</a></li>
+          <li><a href="#services">Brake Repairs</a></li>
+          <li><a href="#services">Roadworthy Certificates</a></li>
+          <li><a href="#services">Vehicle Diagnostics</a></li>
+          <li><a href="#services">Pre-Purchase Inspections</a></li>
+          <li><a href="#services">Roadside Assistance</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-phone"></i> <a href="tel:0403753307">0403 753 307</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> 2 Mullenger Rd, Braybrook VIC 3019</li>
+        </ul>
       </div>
     </div>
-  </footer>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop" aria-label="Back to top">↑</button>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ASM Auto Repairs. All rights reserved.</p>
+      <p class="footer-photo-credit">Workshop &amp; vehicle photos via <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

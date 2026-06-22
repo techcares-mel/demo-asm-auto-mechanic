@@ -1,0 +1,102 @@
+[
+  {
+    "file": "image1.jpg",
+    "context": "exterior",
+    "query": "mechanic working under car",
+    "description": "A mechanic in blue overalls inspects the exhaust system of a car in a workshop.",
+    "photographer": "Artem Podrez",
+    "photographer_url": "https://www.pexels.com/@artempodrez",
+    "pexels_url": "https://www.pexels.com/photo/man-in-blue-coverall-fixing-a-vehicle-8986100/",
+    "source": "pexels"
+  },
+  {
+    "file": "image2.jpg",
+    "context": "interior",
+    "query": "auto repair workshop interior",
+    "description": "Interior of an automotive repair shop with cars undergoing maintenance and servicing.",
+    "photographer": "Renee Razumov",
+    "photographer_url": "https://www.pexels.com/@renee-razumov-2155050841",
+    "pexels_url": "https://www.pexels.com/photo/car-repair-and-maintenance-workshop-interior-33814734/",
+    "source": "pexels"
+  },
+  {
+    "file": "image3.jpg",
+    "context": "team",
+    "query": "mechanic portrait professional",
+    "description": "Portrait of a skilled mechanic holding a lug wrench in a Karachi auto repair shop.",
+    "photographer": "Imtiaz Ahmed",
+    "photographer_url": "https://www.pexels.com/@imtiazahmed",
+    "pexels_url": "https://www.pexels.com/photo/a-mechanic-holding-a-tire-wrench-7807035/",
+    "source": "pexels"
+  },
+  {
+    "file": "image4.jpg",
+    "context": "work",
+    "query": "car engine repair",
+    "description": "Detailed image of a mechanic repairing a car engine, showcasing technical expertise.",
+    "photographer": "Jose Ricardo Barraza Morachis",
+    "photographer_url": "https://www.pexels.com/@lumierestudiomx",
+    "pexels_url": "https://www.pexels.com/photo/a-person-repairing-the-car-engine-4116221/",
+    "source": "pexels"
+  },
+  {
+    "file": "image5.jpg",
+    "context": "work",
+    "query": "car brake service",
+    "description": "Detailed photo of a red automotive brake caliper and disc brake in focus.",
+    "photographer": "Tuesday Temptation",
+    "photographer_url": "https://www.pexels.com/@tuesday-temptation-190692",
+    "pexels_url": "https://www.pexels.com/photo/red-brake-caliper-of-a-automobile-833320/",
+    "source": "pexels"
+  },
+  {
+    "file": "image6.jpg",
+    "context": "work",
+    "query": "mechanic using diagnostic tool",
+    "description": "Close-up of a car engine inspection using a diagnostic tool in a garage setting, showcasing automotive maintenance and repair.",
+    "photographer": "Jose Ricardo Barraza Morachis",
+    "photographer_url": "https://www.pexels.com/@lumierestudiomx",
+    "pexels_url": "https://www.pexels.com/photo/black-and-orange-power-tool-4116172/",
+    "source": "pexels"
+  },
+  {
+    "file": "image7.jpg",
+    "context": "work",
+    "query": "car tyre change",
+    "description": "A young mechanic works on a car's underside in an outdoor garage setting.",
+    "photographer": "alameen .ng",
+    "photographer_url": "https://www.pexels.com/@alameenng",
+    "pexels_url": "https://www.pexels.com/photo/young-mechanic-fixing-car-outdoors-33262771/",
+    "source": "pexels"
+  },
+  {
+    "file": "image8.jpg",
+    "context": "work",
+    "query": "car battery replacement",
+    "description": "Detailed view of an electric car battery inside a vehicle's engine compartment, highlighting sustainable technology.",
+    "photographer": "Ayyeee Ayyeee",
+    "photographer_url": "https://www.pexels.com/@ayyeee-ayyeee-434363205",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-electric-car-battery-in-engine-compartment-37177072/",
+    "source": "pexels"
+  },
+  {
+    "file": "image9.jpg",
+    "context": "gallery",
+    "query": "mechanic inspecting car",
+    "description": "Mechanic inspecting a raised car in an auto workshop for maintenance and repair services.",
+    "photographer": "Artem Podrez",
+    "photographer_url": "https://www.pexels.com/@artempodrez",
+    "pexels_url": "https://www.pexels.com/photo/a-man-in-blue-suit-checking-a-car-8986148/",
+    "source": "pexels"
+  },
+  {
+    "file": "image10.jpg",
+    "context": "gallery",
+    "query": "clean car detailing",
+    "description": "A woman kneels, cleaning the interior of a red BMW in a garage environment.",
+    "photographer": "Caio Renato de Campos",
+    "photographer_url": "https://www.pexels.com/@lasanhasculture",
+    "pexels_url": "https://www.pexels.com/photo/back-view-of-a-woman-cleaning-a-car-17029940/",
+    "source": "pexels"
+  }
+]
