@@ -1,0 +1,38 @@
+{
+  "name": "ASM Auto Repairs",
+  "type": "mobile mechanic",
+  "tagline": "Your reliable, honest and experienced mechanic that comes to you",
+  "description": "ASM Auto Repairs is a mobile mechanic service based in Braybrook, Melbourne, servicing vehicles at your home, workplace, or roadside. Operated by Andy, ASM Auto Repairs brings professional-grade automotive repairs and servicing directly to you, saving you the hassle of dropping your car off at a workshop. With a focus on honesty, reliability, and quality workmanship, ASM Auto Repairs offers a wide range of mechanical services for most makes and models across Melbourne's western suburbs.",
+  "address": "2 Mullenger Rd, Braybrook VIC 3019, Australia",
+  "phone": "0403 753 307",
+  "email": "",
+  "services": [
+    "Logbook Servicing",
+    "General Mechanical Repairs",
+    "Brake Repairs & Replacement",
+    "Roadworthy Certificates (RWC)",
+    "Vehicle Diagnostics & Fault Scanning",
+    "Tyre Replacement & Rotation",
+    "Battery Replacement",
+    "Clutch Repairs",
+    "Suspension & Steering",
+    "Engine Repairs",
+    "Pre-Purchase Vehicle Inspections",
+    "Roadside Assistance"
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/ASMautorepairs/",
+    "instagram": "",
+    "linkedin": "",
+    "tiktok": ""
+  },
+  "existing_website_url": "",
+  "brand_colors": [
+    "#1F1A91",
+    "#261A9E"
+  ],
+  "testimonials": [],
+  "opening_hours": {},
+  "rating": "",
+  "review_count": ""
+}
